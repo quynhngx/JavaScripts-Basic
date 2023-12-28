@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables Numbers Strings Practice</title>
+  </head>
+  <body>
+    
+    <script>
+      /* Excercise 01: Create a variable num1 and assign it a number.
+      - Then, create another variable num2 and assign it a different number. 
+      - Add them together and store the result in a third variable.
+      */
+
+      let num1 = 1; 
+      let num2 = 2; 
+      let num3 = num1 + num2;
+      console.log(num3);
+
+      // /* Exercise 02: Calculate the area of a rectangle.
+      // - Create variables length and width and assign them values.
+      // - Use these variables to calculate the area (area = length * width).
+      // */
+
+      let rectangleLength = 5; 
+      let rectangleWidth = 3; 
+      let area = rectangleLength * rectangleWidth;
+      console.log(`Area of a rectangle: ${area} cm2`);
+
+      // /* Exercise 03: Convert a temperature from Celsius to Fahrenheit.
+      // - Create a variable celsius and assign it a temperature in Celsius.
+      // - Then, create a variable fahrenheit and calculate the equivalent temperature in Fahrenheit using the formula: Fahrenheit = (Celsius * 9/5) + 32.
+      // */
+
+      let celsius = 37; 
+      let fahrenheit = (celsius * 9/5) + 32; 
+      console.log(fahrenheit); 
+
+      // /* Exercise 04: Create a variable firstName and assign it your first name. 
+      // - Create another variable lastName and assign it your last name. 
+      // - Combine these variables to create a full name.
+      // */
+
+      let firstName = 'Nhat Anh';
+      let lastName = ' Tran'; 
+      let fullName = firstName + lastName; 
+      console.log(`My son's full name is ${fullName}`);
+
+      // /* Exercise 05: Extract the first three characters from a string. 
+      // - Create a variable word and assign it a string. 
+      // - Use a method to extract the first three characters and store them in a new variable.
+      // */
+
+      let greeting = 'hej Anh';
+      let extract = greeting.substr(0, 3); 
+      console.log(extract);
+
+      // /* Exercise 06: Concatenate strings. 
+      // - Create three variables with different words and concatenate them to form a sentence.
+      // */
+
+      let variable1 = 'I';
+      let variable2 = ' love';
+      let variable3 = ' meditation.';
+      let sentence = variable1 + variable2 + variable3;
+      console.log(sentence); 
+
+      // /* Exercise 07: Swap the values of two variables. 
+      // - Create two variables a and b with different values. 
+      // - Swap their values without using a temporary variable.
+      // */
+
+      let a = 31;
+      let b = 35;
+      [a, b] = [b, a];
+      console.log(`Value of variable a after swapping: ${a}`);
+      console.log(`Value of variable b after swapping: ${b}`);
+
+      // /* Exercise 08: Increment and decrement. 
+      // - Create a variable and initialize it with a number. 
+      // - Increment it by 1 and then decrement it by 1.
+      // */
+
+      let number = 32; 
+      number++;
+      console.log(`Increment number is ${number}`);
+      number --;  
+      console.log(`Decrement number is ${number}`);
+
+      // /* Exercise 09: Calculate the area of a circle. 
+      // - Create a variable radius and assign it a value. 
+      // - Then, calculate the area of the circle using the formula: area = π * radius^2 (you can use an approximation for π, like 3.14).
+      // */
+
+      let radius = 10;
+      let areaCircle = 3.14 * radius^2; 
+      console.log(`The area of a circle is: ${areaCircle}`);
+
+      // /* Exercise 10: Convert minutes to hours and minutes. 
+      // - Create a variable totalMinutes and assign it a value. 
+      // - Convert this value to hours and remaining minutes, then store the results in two variables.
+      // */
+
+      let totalMinutes = 80; 
+      let hours = Math.floor(totalMinutes / 60); 
+      let remainMinutes = totalMinutes % 60;
+      console.log(`Hours converter are ${hours} hour(s)`);
+      console.log(`Remaining minutes are ${remainMinutes} minutes`);
+
+      // /* Exercise 11: Generate a random number between 1 and 10 (inclusive) and store it in a variable.
+      // */
+
+      let randomNumber = Math.floor(Math.random() * 10) + 1; 
+      console.log(randomNumber);
+
+      // /* Exercise 12: Check if a word is a palindrome. 
+      // - Create a variable word and assign it a string. 
+      // - Check if the word is the same backward as forward (e.g., "level" or "radar").
+      // */
+
+      let word1 = 'pappa';
+      let word1Array = word1.split ('');
+      let revArray = word1Array.reverse();
+      let revString = revArray.join('');
+      if (word1 == revString) {
+        alert (`${word1} is a palindrome`);
+      }
+      else {
+        alert (`${word1} is not a palindrome`);
+      }
+
+      // /* Exercise 13: Convert a string to lowercase. 
+      // - Create a variable mixedCase with a string containing both uppercase and lowercase letters. 
+      // - Convert it to lowercase and store the result in a new variable.
+      // */
+
+      let mixedCase = 'I Can Do it';
+      let result = mixedCase.toLocaleLowerCase();
+      console.log(result);
+
+      // /* Exercise 14: Replace a character in a string. 
+      // - Create a variable sentence with a sentence. 
+      // - Replace a specific character with another character and store the result in a new variable.
+      // */
+
+      let sentence1 = 'The weather is nice today';
+      let newSentence1 = sentence1.replace('nice', 'bad');
+      console.log(newSentence1);
+
+      // /* Exercise 15: 
+      // - Use shorthand assignment to increment a variable by a certain value. 
+      // - Create a variable and increment it by, let's say, 5 using shorthand notation.
+      // */
+
+      let variable15 = 5;
+      variable15 += 5;
+      console.log(`variable15 is ${variable15}`); 
+
+
+      /* Exercise 16: Create a variable called 'hour' and save the current hour of the day (use 24-hour format and save it as a number between 0 and 23)
+      - If hour is between 6 & 12, display 'Good morning!' in the console.
+      - If hour is between 13 & 17, display 'Good afternoon!' in the console.
+      - Otherwise, display 'Good night!' in the console.
+      */
+
+      const hour = 20;
+      const name = 'Quynh';
+
+      if (hour >= 6 && hour <= 12) {
+        console.log(`Good morning ${name}!`);
+      } else if (hour >= 13 && hour <= 17) {
+        console.log(`Good afternoon ${name}!`);
+      } else {
+        console.log(`Good night ${name}!`);
+      }
+
+
+      /* Exercise 17: Create a coin-flip game
+      - Generate a random number with Math.random(). Save it in a variable.
+
+      - Create an if-statement and check:
+      + If the number is less than 0.5, then display 'heads' in the console.
+      + Else display 'tails' in the console.
+      - Instead of displaying 'heads' or 'tails' in the console, save the result in a variable called 'result'.
+
+      - Lets say we're trying to guess the result. Create a variable called 'guess' and save your guess ('heads' or 'tails').
+      + If your guess matches the result, display 'You win!' in the console.
+      + If your guess does not match the result, display 'You lose!'
+
+      - (Challenge) Instead of using if-statements in the previous exercises, try switching them into ternary operators (condition ? A : B).
+      */
+
+      const randomNumber = Math.random();
+      let result = '';
+      const guess = 'heads';
+
+      // if (randomNumber < 0.5) {
+      //   console.log(result = 'heads');
+      // } else {
+      //   console.log(result = 'tails');
+      // } 
+
+      console.log(randomNumber < 0.5 ? result = 'heads' : result = 'tails');
+
+      // if (guess === result) {
+      //   console.log('You win!');
+      // } else {
+      //   console.log('You lose!')
+      // }
+
+      console.log(guess === result ? 'You win!' : 'You lose!');
+      
+
+      /* Exercise 18: Write a program that determines whether a given number is positive or negative.
+      */
+
+      const number18 = -9;
+
+      if (Math.sign(number18) === 1) {
+        console.log(`${number18} is positive`);
+      } else if (Math.sign(number18) === -1) {
+        console.log(`${number18} is negative`);
+      } else {
+        console.log(`${number18} is zero`);
+      }
+
+      // console.log(Math.sign(number18) === 1 ? `${number18} is positive` : `${number18} is negative`);
+
+
+      /* Exercise 19: Write a program that checks if a number is even or odd.
+      */
+
+      const number19 = 19;
+      const result = number19 % 2 == 0 ? 'even' : 'odd';
+
+      console.log(`Number ${number19} is ${result}.`);
+
+
+      /* Exercise 20: Write a program to determine the greater of two numbers.
+      */
+      
+      const greaterNumber = Math.max(28, 89);
+      console.log(`The greater number is ${greaterNumber}.`);
+
+
+      /* Exercise 21: Write a program that transforms a numerical grade to a letter grade (e.g grade 10 should display “A”).
+      */
+
+      const grade = 2;
+      if (grade <= 10 && grade >=8) {
+        console.log('You get grade A');
+      } else if (grade < 8 && grade >=6) {
+        console.log('You get grade B');
+      } else if (grade < 6 && grade >=4) {
+        console.log('You get grade C');
+      } else {
+        console.log('You didn\'t pass this exam');
+      }
+
+
+
+
+
+
+
+
+
+
+    
+
+      
+
+
+      
+
+
+      
+
+    </script>
+  </body>
+</html>
